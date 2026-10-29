@@ -104,6 +104,9 @@
     .tile .more { margin-top: auto; padding-top: 8px; }
     .tile-adoh { background: var(--surface); border: 1px solid var(--line); }
     .tile-adoh img { border-bottom: 1px solid var(--line); aspect-ratio: 1200 / 630; object-fit: cover; }
+    .tile-gc { background: var(--surface); border: 1px solid var(--line); }
+    .stack { display: flex; flex-direction: column; gap: 20px; }
+    .stack > .tile { flex: 1; }
     .tile-ndis { background: var(--accent-soft); border: 1px solid transparent; }
     .tile-ndis .tile-body { padding: 36px 32px; gap: 16px; }
     .tile-ndis h3 { font-size: clamp(1.6rem, 2.6vw, 2rem); line-height: 1.15; }
@@ -156,14 +159,23 @@
             <a class="link more" href="https://adoh.ai">Visit adoh.ai &rarr;</a>
           </div>
         </article>
-        <article class="tile tile-ndis">
-          <div class="tile-body">
-            <span class="status">In development</span>
-            <h3>A compliance platform for NDIS providers</h3>
-            <p>Keeps audit evidence current for disability care providers and shows what to fix first, alongside rostering, progress notes and billing.</p>
-            <p class="more">Built and hosted in Australia.</p>
-          </div>
-        </article>
+        <div class="stack">
+          <article class="tile tile-gc">
+            <div class="tile-body">
+              <h3>Great Ceylonese</h3>
+              <p>Sri Lankan groceries, delivered across Australia. Click &amp; collect and same-day delivery in Canberra, with Australia-wide shipping via Australia Post.</p>
+              <a class="link more" href="https://greatceylonese.com.au">Visit greatceylonese.com.au &rarr;</a>
+            </div>
+          </article>
+          <article class="tile tile-ndis">
+            <div class="tile-body">
+              <span class="status">In development</span>
+              <h3>A compliance platform for NDIS providers</h3>
+              <p>Keeps audit evidence current for disability care providers and shows what to fix first, alongside rostering, progress notes and billing.</p>
+              <p class="more">Built and hosted in Australia.</p>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
 
