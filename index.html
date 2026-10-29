@@ -83,14 +83,14 @@
     }
 
     /* Hero */
-    .hero { padding: 88px 0 104px; }
+    .hero { padding-block: 88px 104px; }
     .hero h1 {
       margin: 0; max-width: 14ch;
       font-size: clamp(2.6rem, 6vw, 4.5rem); line-height: 1.04; letter-spacing: -0.04em; font-weight: 650;
     }
     .hero p { margin: 24px 0 36px; max-width: 46ch; font-size: 1.2rem; color: var(--muted); }
     .actions { display: flex; flex-wrap: wrap; gap: 12px; }
-    @media (max-width: 640px) { .hero { padding: 48px 0 64px; } }
+    @media (max-width: 640px) { .hero { padding-block: 48px 64px; } }
 
     /* Products */
     .products { padding-bottom: 104px; }
@@ -115,13 +115,13 @@
     .link:hover { text-decoration: underline; text-underline-offset: 4px; }
 
     /* About */
-    .about { border-top: 1px solid var(--line); padding: 88px 0 104px; }
+    .about { border-top: 1px solid var(--line); padding-block: 88px 104px; }
     .about p { margin: 0; max-width: 30ch; font-size: clamp(1.5rem, 3vw, 2.1rem); line-height: 1.3; letter-spacing: -0.025em; font-weight: 500; }
     .about p span { color: var(--muted); }
 
     /* Footer */
     footer { border-top: 1px solid var(--line); }
-    .foot { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; padding: 28px 0 40px; color: var(--muted); font-size: 0.95rem; }
+    .foot { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; padding-block: 28px 40px; color: var(--muted); font-size: 0.95rem; }
     .foot a { text-decoration: none; }
     .foot a:hover { color: var(--ink); }
   </style>
@@ -161,7 +161,7 @@
             <span class="status">In development</span>
             <h3>A compliance platform for NDIS providers</h3>
             <p>Keeps audit evidence current for disability care providers and shows what to fix first, alongside rostering, progress notes and billing.</p>
-            <p>Built and hosted in Australia.</p>
+            <p class="more">Built and hosted in Australia.</p>
           </div>
         </article>
       </div>
